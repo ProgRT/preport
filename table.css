@@ -1,0 +1,32 @@
+table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tr {
+	height: 8mm;
+}
+tbody tr:not(:last-child) {
+	border-bottom: 0.5px solid hsl(0, 0%, 70%);
+}
+
+td, th{
+	text-align: center;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-weight: normal;
+}
+
+td.result {
+	background: hsl(0, 0%, 95%);
+}
+
+thead {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+tbody {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}

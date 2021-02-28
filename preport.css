@@ -1,0 +1,80 @@
+@import "table.css";
+@import "/home/nicolas/Projets/Publiés/simvent.js/css/gs.css";
+
+body {
+	font-size: 10pt;
+	max-width: 8.5in;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	font-size: 105%;
+}
+
+p {
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+}
+
+a {
+	color: inherit;
+	transition: 2s;
+}
+
+a:hover {
+	color: blue;
+}
+table {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.ispan {
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+	border-bottom: 1px solid silver;
+	min-width: 12pt;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+header div {
+	display: inline-block;
+	margin-right: 60px;
+}
+
+.logo {
+	opacity: 0.3;
+	filter: saturate(0);
+	height: 2cm;
+	transition: 1s;
+}
+.logo:hover {
+	opacity: 0.75;
+	filter: saturate(100%);
+	height: 2cm;
+}
+
+/***** Graphics *********/
+.cGraph {
+	height: 400px;
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media print {
+	/*
+	html, body {
+		width: 8.5in;
+		height: 11in;
+		border: 1px dashed gray;
+	}*/
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
+}
