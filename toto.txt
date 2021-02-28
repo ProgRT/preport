@@ -1,0 +1,3 @@
+Trier les données en fonction de la PEP
+X Ne pas tracer de graph pour les colones vides
+Ajouter un système de configuration
