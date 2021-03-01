@@ -38,9 +38,6 @@ g#annotationsGroup line, g#plageGroup line {
   .gs .ligneZero {
     stroke: silver; }
 
-.gs #waveformGroup path {
-  stroke: #333333; }
-
 .gs.thinPath #waveformGroup path {
   stroke-width: 1px;
   stroke: #333333; }

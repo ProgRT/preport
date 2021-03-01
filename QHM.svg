@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="37.063053mm"
-   height="16.781466mm"
-   viewBox="0 0 37.063053 16.781466"
+   width="39.063053mm"
+   height="18.781466mm"
+   viewBox="0 0 39.063053 18.781466"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
@@ -36,9 +36,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1298776"
-     inkscape:cx="70.387985"
-     inkscape:cy="53.145787"
+     inkscape:zoom="3.0012107"
+     inkscape:cx="14.023062"
+     inkscape:cy="63.873369"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -52,10 +52,11 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     lock-margins="true" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -64,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -72,61 +73,159 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-30.475528,-98.066204)">
+     transform="translate(-29.475528,-97.066204)">
     <g
        id="g1447"
        transform="translate(1.5513605,2.1166667)">
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:8.23478px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.441148"
-         x="37.998161"
-         y="106.70264"
-         id="text835"><tspan
-           sodipodi:role="line"
-           id="tspan833"
-           x="37.998161"
-           y="106.70264"
-           style="fill:#204a87;stroke:#204a87;stroke-width:0.441148">Q</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:14.8288px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.594;stroke-miterlimit:4;stroke-dasharray:none"
-         x="47.289478"
-         y="107.05673"
-         id="text839"><tspan
-           sodipodi:role="line"
-           id="tspan837"
-           x="47.289478"
-           y="107.05673"
-           style="fill:#204a87;stroke:#204a87;stroke-width:0.594;stroke-miterlimit:4;stroke-dasharray:none">H</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:8.84134px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.473642"
-         x="56.751667"
-         y="107.05673"
-         id="text843"><tspan
-           sodipodi:role="line"
-           id="tspan841"
-           x="56.751667"
-           y="107.05673"
-           style="fill:#204a87;stroke:#204a87;stroke-width:0.473642">M</tspan></text>
+      <g
+         aria-label="Q"
+         id="text835"
+         style="font-weight:bold;font-size:8.23478px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.441148">
+        <path
+           d="m 40.929744,106.38972 -0.658783,-0.62585 c 0.403504,-0.49409 0.658783,-1.27639 0.658783,-2.0834 0,-1.77048 -1.1364,-3.07981 -2.890408,-3.07981 -1.754008,0 -2.890408,1.29287 -2.890408,3.09628 0,1.80342 1.144634,3.10451 2.890408,3.10451 0.617608,0 1.078756,-0.12352 1.556373,-0.41173 l 0.708191,0.66701 z m -1.235217,-2.68454 c 0,0.49408 -0.09058,0.89759 -0.271748,1.25992 l -0.675252,-0.64231 -0.625843,0.66701 0.634078,0.60114 c -0.1894,0.0988 -0.461148,0.15646 -0.724661,0.15646 -0.988174,0 -1.646956,-0.79054 -1.646956,-2.05046 0,-1.25992 0.658782,-2.04222 1.655191,-2.04222 1.004643,0 1.655191,0.82347 1.655191,2.05046 z"
+           style="fill:#204a87;stroke:#204a87;stroke-width:0.441148"
+           id="path1233" />
+      </g>
+      <g
+         aria-label="H"
+         id="text839"
+         style="font-weight:bold;font-size:14.8288px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.594;stroke-miterlimit:4;stroke-dasharray:none">
+        <path
+           d="M 51.678816,107.05673 V 96.246537 h -2.22432 v 4.048263 h -4.285523 v -4.048263 h -2.22432 v 10.810193 h 2.22432 v -4.90833 h 4.285523 v 4.90833 z"
+           style="fill:#204a87;stroke:#204a87;stroke-width:0.594;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path1236" />
+      </g>
+      <g
+         aria-label="M"
+         id="text843"
+         style="font-weight:bold;font-size:8.84134px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;stroke:#204a87;stroke-width:0.473642">
+        <path
+           d="m 59.930136,107.05673 v -6.44533 h -1.998142 l -1.131692,5.12797 -1.167057,-5.12797 h -1.98046 v 6.44533 h 1.326201 v -5.02188 l 1.158216,5.02188 h 1.326201 l 1.140532,-5.02188 v 5.02188 z"
+           style="fill:#204a87;stroke:#204a87;stroke-width:0.473642"
+           id="path1239" />
+      </g>
     </g>
-    <text
-       xml:space="preserve"
+    <g
        id="text863"
-       style="font-weight:bold;font-size:4.93889px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect865);" />
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:2.82222px;line-height:1.1;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:-0.047625px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583"
-       x="48.959076"
-       y="114.37636"
-       id="text1435"><tspan
-         sodipodi:role="line"
-         x="48.935265"
-         y="114.37636"
+       style="font-weight:bold;font-size:4.93889px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect865)" />
+    <g
+       aria-label="Quelconque Hopital Montréalais"
+       id="text1435"
+       style="font-weight:bold;font-size:2.82222px;line-height:1.1;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:-0.047625px;word-spacing:0px;text-anchor:middle;stroke-width:0.264583">
+      <path
+         d="m 30.475528,113.39987 c 0,0.58984 0.443089,1.02447 0.9398,1.02447 0.09878,0 0.166511,-0.0141 0.273755,-0.0452 l 0.239889,0.31044 h 0.344311 l -0.347134,-0.42615 v -0.003 c 0.276578,-0.19474 0.428978,-0.51647 0.428978,-0.86078 0,-0.5842 -0.437444,-1.03011 -0.939799,-1.03011 -0.505178,0 -0.9398,0.44309 -0.9398,1.03011 z m 0.287867,0.008 c 0,-0.51083 0.293511,-0.82127 0.651933,-0.82127 0.366888,0 0.651932,0.31891 0.651932,0.81562 0,0.31327 -0.110066,0.53905 -0.290688,0.68016 l -0.206022,-0.25682 h -0.307622 l 0.2794,0.36688 c -0.08749,0.0113 -0.09031,0.0113 -0.115711,0.0113 h -0.01129 c -0.259645,0 -0.651933,-0.19473 -0.651933,-0.79586 z"
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
-         id="tspan1439">Quelconque Hopital Montréalais</tspan></text>
-    <text
-       xml:space="preserve"
+         id="path1175" />
+      <path
+         d="m 32.654632,114.00665 c 0,0.16369 0.01129,0.39229 0.299156,0.39229 0.197555,0 0.389466,-0.0734 0.527755,-0.23425 v 0.21167 h 0.265288 v -1.33209 h -0.270933 v 0.80433 c 0,0.0282 0,0.0593 -0.0028,0.0875 -0.0085,0.0734 -0.0762,0.26247 -0.333022,0.26247 -0.222955,0 -0.211666,-0.0395 -0.214489,-0.21167 v -0.94262 h -0.270933 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1177" />
+      <path
+         d="m 33.967313,113.70185 c 0,0.36124 0.268111,0.69709 0.671688,0.69709 0.191911,0 0.347133,-0.0621 0.474133,-0.14394 l -0.01976,-0.2286 c -0.06209,0.0452 -0.220133,0.16087 -0.454377,0.16087 -0.225778,0 -0.417689,-0.2032 -0.417689,-0.48824 v -0.0282 h 0.908755 c -0.0028,-0.55033 -0.321733,-0.66322 -0.536222,-0.66322 -0.341488,0 -0.626532,0.3048 -0.626532,0.69427 z m 0.287866,-0.19756 c 0.05927,-0.18062 0.200378,-0.28222 0.335844,-0.28222 0.206022,0 0.2794,0.16651 0.307622,0.28222 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1179" />
+      <path
+         d="m 35.350549,114.37636 h 0.265289 v -1.96144 h -0.265289 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1181" />
+      <path
+         d="m 35.853253,113.70749 c 0,0.35842 0.262467,0.69145 0.651933,0.69145 0.200378,0 0.347133,-0.0593 0.4826,-0.14112 l -0.01976,-0.23424 c -0.09595,0.0649 -0.231422,0.15522 -0.465666,0.15522 -0.1524,0 -0.378178,-0.0931 -0.378178,-0.46849 0,-0.40922 0.231422,-0.4826 0.386645,-0.4826 0.197555,0 0.273755,0.0367 0.42051,0.13265 l 0.03951,-0.23142 c -0.166511,-0.0875 -0.253999,-0.12136 -0.460021,-0.12136 -0.395111,0 -0.657578,0.33302 -0.657578,0.69991 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1183" />
+      <path
+         d="m 37.106669,113.71314 c 0,0.4064 0.316089,0.6858 0.657577,0.6858 0.352778,0 0.657578,-0.29069 0.657578,-0.68298 0,-0.36689 -0.276578,-0.70556 -0.657578,-0.70556 -0.349955,0 -0.657577,0.30198 -0.657577,0.70274 z m 0.270933,-0.0395 c 0,-0.40358 0.245533,-0.45156 0.386644,-0.45156 0.200378,0 0.386644,0.1016 0.386644,0.44591 0,0.14676 -0.01129,0.29916 -0.115711,0.4064 -0.07338,0.0762 -0.174977,0.10442 -0.270933,0.10442 -0.107244,0 -0.211666,-0.0367 -0.282222,-0.11853 -0.09031,-0.10724 -0.104422,-0.24836 -0.104422,-0.38664 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1185" />
+      <path
+         d="m 38.639486,114.37636 h 0.270933 v -0.762 c 0,-0.096 0.02258,-0.381 0.276578,-0.381 0.26811,0 0.273755,0.16087 0.273755,0.25118 v 0.89182 h 0.270933 v -0.889 c 0,-0.16651 -0.0085,-0.46567 -0.403577,-0.46567 -0.256823,0 -0.381,0.1778 -0.426156,0.254 l -0.0028,-0.096 v -0.13547 h -0.259644 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1187" />
+      <path
+         d="m 39.969099,113.71314 c 0,0.40357 0.239889,0.6858 0.502356,0.6858 0.183444,0 0.310444,-0.096 0.400755,-0.19192 v 0.64065 h 0.270933 v -1.82598 h -0.265289 v 0.20038 c -0.07055,-0.0875 -0.183444,-0.20038 -0.372533,-0.20038 -0.293511,0 -0.536222,0.29916 -0.536222,0.69145 z m 0.270934,0 c 0,-0.28787 0.203199,-0.47414 0.400755,-0.47414 0.138289,0 0.237066,0.12418 0.237066,0.23989 v 0.49107 c 0,0.127 -0.149577,0.21731 -0.265288,0.21731 -0.2032,0 -0.372533,-0.21449 -0.372533,-0.47413 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1189" />
+      <path
+         d="m 41.462402,114.00665 c 0,0.16369 0.01129,0.39229 0.299155,0.39229 0.197556,0 0.389467,-0.0734 0.527755,-0.23425 v 0.21167 h 0.265289 v -1.33209 h -0.270933 v 0.80433 c 0,0.0282 0,0.0593 -0.0028,0.0875 -0.0085,0.0734 -0.0762,0.26247 -0.333022,0.26247 -0.222956,0 -0.211667,-0.0395 -0.214489,-0.21167 v -0.94262 h -0.270933 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1191" />
+      <path
+         d="m 42.775082,113.70185 c 0,0.36124 0.268111,0.69709 0.671689,0.69709 0.191911,0 0.347133,-0.0621 0.474133,-0.14394 l -0.01976,-0.2286 c -0.06209,0.0452 -0.220133,0.16087 -0.454377,0.16087 -0.225778,0 -0.417689,-0.2032 -0.417689,-0.48824 v -0.0282 h 0.908755 c -0.0028,-0.55033 -0.321733,-0.66322 -0.536222,-0.66322 -0.341489,0 -0.626533,0.3048 -0.626533,0.69427 z m 0.287867,-0.19756 c 0.05927,-0.18062 0.200377,-0.28222 0.335844,-0.28222 0.206022,0 0.2794,0.16651 0.307622,0.28222 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1193" />
+      <path
+         d="m 45.092823,114.37636 h 0.296333 v -0.90593 h 0.948266 v 0.90593 h 0.296333 v -1.96144 h -0.296333 v 0.82973 h -0.948266 v -0.82973 h -0.296333 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1195" />
+      <path
+         d="m 46.899391,113.71314 c 0,0.4064 0.316088,0.6858 0.657577,0.6858 0.352778,0 0.657577,-0.29069 0.657577,-0.68298 0,-0.36689 -0.276577,-0.70556 -0.657577,-0.70556 -0.349955,0 -0.657577,0.30198 -0.657577,0.70274 z m 0.270933,-0.0395 c 0,-0.40358 0.245533,-0.45156 0.386644,-0.45156 0.200378,0 0.386644,0.1016 0.386644,0.44591 0,0.14676 -0.01129,0.29916 -0.115711,0.4064 -0.07338,0.0762 -0.174977,0.10442 -0.270933,0.10442 -0.107244,0 -0.211666,-0.0367 -0.282222,-0.11853 -0.09031,-0.10724 -0.104422,-0.24836 -0.104422,-0.38664 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1197" />
+      <path
+         d="m 48.435031,114.84767 h 0.270933 v -0.61807 c 0.0762,0.079 0.186266,0.16934 0.364066,0.16934 0.296333,0 0.539044,-0.29634 0.539044,-0.69145 0,-0.37818 -0.183444,-0.6858 -0.434622,-0.6858 -0.189088,0 -0.34431,0.0706 -0.474133,0.1778 v -0.15522 h -0.265288 z m 0.270933,-0.79305 v -0.69991 c 0.05362,-0.0508 0.132644,-0.11571 0.259644,-0.11571 0.189089,0 0.369711,0.18909 0.369711,0.46849 0,0.29633 -0.206022,0.47978 -0.397933,0.47978 -0.138289,0 -0.200378,-0.0931 -0.231422,-0.13265 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1199" />
+      <path
+         d="m 49.846488,112.68303 h 0.265288 v -0.26529 h -0.265288 z m 0,1.69333 h 0.265288 v -1.33209 h -0.265288 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1201" />
+      <path
+         d="m 50.304036,113.25594 h 0.225777 v 0.67733 c 0,0.18344 0.02258,0.46567 0.248356,0.46567 0.138288,0 0.296333,-0.0282 0.457199,-0.11572 l -0.05644,-0.2032 c -0.04516,0.0339 -0.121356,0.0988 -0.242711,0.0988 -0.08749,0 -0.146756,-0.0705 -0.146756,-0.27657 v -0.64629 h 0.395111 v -0.21167 h -0.395111 v -0.381 h -0.253999 v 0.381 h -0.231422 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1203" />
+      <path
+         d="m 51.382476,114.001 c 0,0.16651 0.107244,0.39794 0.349955,0.39794 0.166511,0 0.364066,-0.0621 0.476955,-0.2032 l 0.0028,0.079 v 0.1016 h 0.265289 v -0.85231 l -0.0028,-0.0931 c -0.01693,-0.22295 -0.214489,-0.42333 -0.505178,-0.42333 -0.194733,0 -0.330199,0.048 -0.47131,0.12136 l 0.01975,0.23706 c 0.155222,-0.11289 0.248355,-0.1524 0.445911,-0.15804 0.03951,0 0.146755,0.003 0.211666,0.12982 0.03104,0.0593 0.02822,0.1016 0.02822,0.16933 v 0.0988 c -0.445911,0.0141 -0.821266,0.13265 -0.821266,0.39511 z m 0.262466,-0.006 c 0,-0.15522 0.222955,-0.24271 0.5588,-0.25682 v 0.1778 c 0,0.0395 0,0.079 -0.01693,0.11571 -0.04516,0.0988 -0.172155,0.15522 -0.293511,0.15522 -0.135466,0 -0.248355,-0.0762 -0.248355,-0.19191 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1205" />
+      <path
+         d="m 52.796757,114.37636 h 0.265289 v -1.96144 h -0.265289 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1207" />
+      <path
+         d="m 54.335564,114.37636 h 0.265289 v -1.68769 c 0.02822,0.11571 0.09313,0.28504 0.197555,0.56727 l 0.409222,1.07244 h 0.254 l 0.417688,-1.0922 c 0.07056,-0.18062 0.138289,-0.3556 0.194734,-0.54751 v 1.68769 h 0.265288 v -1.96144 h -0.389466 c -0.522111,1.34619 -0.601133,1.57479 -0.612422,1.64253 -0.01129,-0.0677 -0.09031,-0.29634 -0.612422,-1.64253 h -0.389466 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1209" />
+      <path
+         d="m 56.619091,113.71314 c 0,0.4064 0.316088,0.6858 0.657577,0.6858 0.352777,0 0.657577,-0.29069 0.657577,-0.68298 0,-0.36689 -0.276577,-0.70556 -0.657577,-0.70556 -0.349955,0 -0.657577,0.30198 -0.657577,0.70274 z m 0.270933,-0.0395 c 0,-0.40358 0.245533,-0.45156 0.386644,-0.45156 0.200378,0 0.386644,0.1016 0.386644,0.44591 0,0.14676 -0.01129,0.29916 -0.115711,0.4064 -0.07338,0.0762 -0.174978,0.10442 -0.270933,0.10442 -0.107244,0 -0.211667,-0.0367 -0.282222,-0.11853 -0.09031,-0.10724 -0.104422,-0.24836 -0.104422,-0.38664 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1211" />
+      <path
+         d="m 58.151908,114.37636 h 0.270934 v -0.762 c 0,-0.096 0.02258,-0.381 0.276577,-0.381 0.268111,0 0.273755,0.16087 0.273755,0.25118 v 0.89182 h 0.270934 v -0.889 c 0,-0.16651 -0.0085,-0.46567 -0.403578,-0.46567 -0.256822,0 -0.381,0.1778 -0.426155,0.254 l -0.0028,-0.096 v -0.13547 h -0.259645 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1213" />
+      <path
+         d="m 59.436366,113.25594 h 0.225777 v 0.67733 c 0,0.18344 0.02258,0.46567 0.248356,0.46567 0.138288,0 0.296333,-0.0282 0.457199,-0.11572 l -0.05644,-0.2032 c -0.04516,0.0339 -0.121356,0.0988 -0.242711,0.0988 -0.08749,0 -0.146756,-0.0705 -0.146756,-0.27657 v -0.64629 h 0.395111 v -0.21167 h -0.395111 v -0.381 h -0.253999 v 0.381 h -0.231422 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1215" />
+      <path
+         d="m 60.588183,114.37636 h 0.265289 v -0.66887 c 0,-0.35842 0.307622,-0.44309 0.4826,-0.44591 v -0.23989 c -0.299156,0.006 -0.443089,0.21731 -0.493889,0.31045 v -0.28787 h -0.254 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1217" />
+      <path
+         d="m 61.644043,112.858 h 0.214489 l 0.426155,-0.36406 h -0.270933 z m -0.2286,0.84385 c 0,0.36124 0.268111,0.69709 0.671688,0.69709 0.191911,0 0.347133,-0.0621 0.474133,-0.14394 l -0.01976,-0.2286 c -0.06209,0.0452 -0.220133,0.16087 -0.454378,0.16087 -0.225777,0 -0.417688,-0.2032 -0.417688,-0.48824 v -0.0282 h 0.908755 c -0.0028,-0.55033 -0.321733,-0.66322 -0.536222,-0.66322 -0.341489,0 -0.626533,0.3048 -0.626533,0.69427 z m 0.287866,-0.19756 c 0.05927,-0.18062 0.200378,-0.28222 0.335845,-0.28222 0.206022,0 0.279399,0.16651 0.307622,0.28222 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1219" />
+      <path
+         d="m 62.725304,114.001 c 0,0.16651 0.107245,0.39794 0.349956,0.39794 0.166511,0 0.364066,-0.0621 0.476955,-0.2032 l 0.0028,0.079 v 0.1016 h 0.265289 v -0.85231 l -0.0028,-0.0931 c -0.01693,-0.22295 -0.214488,-0.42333 -0.505177,-0.42333 -0.194733,0 -0.3302,0.048 -0.471311,0.12136 l 0.01976,0.23706 c 0.155222,-0.11289 0.248355,-0.1524 0.445911,-0.15804 0.03951,0 0.146755,0.003 0.211666,0.12982 0.03104,0.0593 0.02822,0.1016 0.02822,0.16933 v 0.0988 c -0.44591,0.0141 -0.821266,0.13265 -0.821266,0.39511 z m 0.262467,-0.006 c 0,-0.15522 0.222955,-0.24271 0.558799,-0.25682 v 0.1778 c 0,0.0395 0,0.079 -0.01693,0.11571 -0.04516,0.0988 -0.172155,0.15522 -0.293511,0.15522 -0.135466,0 -0.248355,-0.0762 -0.248355,-0.19191 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1221" />
+      <path
+         d="m 64.139582,114.37636 h 0.265289 v -1.96144 h -0.265289 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1223" />
+      <path
+         d="m 64.653577,114.001 c 0,0.16651 0.107244,0.39794 0.349955,0.39794 0.166511,0 0.364066,-0.0621 0.476955,-0.2032 l 0.0028,0.079 v 0.1016 h 0.265289 v -0.85231 l -0.0028,-0.0931 c -0.01693,-0.22295 -0.214489,-0.42333 -0.505178,-0.42333 -0.194733,0 -0.330199,0.048 -0.47131,0.12136 l 0.01976,0.23706 c 0.155222,-0.11289 0.248355,-0.1524 0.445911,-0.15804 0.03951,0 0.146755,0.003 0.211666,0.12982 0.03105,0.0593 0.02822,0.1016 0.02822,0.16933 v 0.0988 c -0.445911,0.0141 -0.821266,0.13265 -0.821266,0.39511 z m 0.262466,-0.006 c 0,-0.15522 0.222955,-0.24271 0.5588,-0.25682 v 0.1778 c 0,0.0395 0,0.079 -0.01693,0.11571 -0.04515,0.0988 -0.172155,0.15522 -0.293511,0.15522 -0.135466,0 -0.248355,-0.0762 -0.248355,-0.19191 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1225" />
+      <path
+         d="m 66.067858,112.68303 h 0.265289 v -0.26529 h -0.265289 z m 0,1.69333 h 0.265289 v -1.33209 h -0.265289 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1227" />
+      <path
+         d="m 66.553627,114.26629 c 0.152399,0.0847 0.310444,0.13265 0.502355,0.13265 0.397933,0 0.482599,-0.24836 0.482599,-0.41487 0,-0.18062 -0.115711,-0.29916 -0.222955,-0.35842 -0.124178,-0.0677 -0.296333,-0.079 -0.375355,-0.10442 -0.07902,-0.0254 -0.124178,-0.0875 -0.124178,-0.14676 0,-0.0621 0.03951,-0.15522 0.211667,-0.15522 0.172155,0 0.282222,0.0367 0.426155,0.11571 l 0.04233,-0.23142 c -0.163689,-0.0706 -0.268111,-0.096 -0.437444,-0.096 -0.414866,0 -0.488244,0.25118 -0.488244,0.39793 0,0.20603 0.163689,0.3302 0.299155,0.37536 0.1524,0.0536 0.423333,0.0395 0.423333,0.22578 0,0.0677 -0.04515,0.17215 -0.239888,0.17215 -0.225778,0 -0.364067,-0.0903 -0.4572,-0.15522 z"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:2.82222px;font-family:'CMU Bright';-inkscape-font-specification:'CMU Bright Semi-Bold';stroke-width:0.264583"
+         id="path1229" />
+    </g>
+    <g
        id="text1449"
        style="font-weight:bold;font-size:4.93889px;line-height:1.25;font-family:'TeX Gyre Heros';-inkscape-font-specification:'TeX Gyre Heros Bold';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1451)" />
   </g>
