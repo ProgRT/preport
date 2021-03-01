@@ -1,5 +1,5 @@
 @import "table.css";
-@import "/home/nicolas/Projets/Publiés/simvent.js/css/gs.css";
+@import "gs.css";
 
 html {
 	min-height: 100%;
