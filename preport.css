@@ -1,9 +1,15 @@
 @import "table.css";
 @import "/home/nicolas/Projets/Publiés/simvent.js/css/gs.css";
 
+html {
+	min-height: 100%;
+}
 body {
 	font-size: 10pt;
+	min-height: 95vh;
 	max-width: 8.5in;
+	display: grid;
+	grid-template-rows: auto 2fr auto;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -13,8 +19,6 @@ h1 {
 }
 
 p {
-	margin-top: 4pt;
-	margin-bottom: 4pt;
 }
 
 a {
@@ -44,7 +48,6 @@ header div {
 	display: inline-block;
 	margin-right: 60px;
 }
-
 .logo {
 	opacity: 0.3;
 	filter: saturate(0);
@@ -57,6 +60,23 @@ header div {
 	height: 2cm;
 }
 
+/***** Footer *********/
+
+footer {
+	border-top: 1px solid black;
+	font-size: 88%;
+	opacity: 50%;
+	transition: 1s;
+}
+
+footer:hover {
+	opacity: 100%;
+}
+
+footer p {
+	margin-top: 4pt;
+	margin-bottom: 4pt;
+}
 /***** Graphics *********/
 .cGraph {
 	height: 400px;

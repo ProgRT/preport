@@ -12,10 +12,13 @@ tbody tr:not(:last-child) {
 }
 
 td, th{
-	text-align: center;
 	padding-left: 6px;
 	padding-right: 6px;
 	font-weight: normal;
+}
+
+td.number, td.result, th {
+	text-align: center;
 }
 
 td.result {

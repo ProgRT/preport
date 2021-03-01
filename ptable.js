@@ -120,13 +120,11 @@ class ptable {
 	dataToRow(row){
 		let PEP = parseFloat(row.cells[0].textContent);
 		let dataRow = this.data.find(r=>r.PEP == PEP);
-		//console.log('Data to table for PEP = ' + PEP);
+
 		for(let i = 0; i < this.columns.length; i ++){
 			let col = this.columns[i];
 			
 			if(col.type == 'result' && col.formule == null){
-				//console.log(col.name + ' has no formulae.');
-				//console.log(row.cells[i]);
 				row.cells[i].textContent = dataRow[col.name]||null;
 			}
 		}
@@ -140,12 +138,11 @@ class ptable {
 			else{this.data.push(this.getData(row));}
 		}
 
-		this.data.sort((a,b)=>b.PEP - a.PEP);
+		this.data.sort((a,b)=>a.PEP - b.PEP);
 
 		for(let func of this.extraRowFunc){
 			this.data.map(func);
 		}
-
 		for(let row of this.tbody.rows){
 			if(isEmpty(row)){break;}
 			else{this.dataToRow(row)}

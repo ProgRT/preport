@@ -121,12 +121,10 @@ class preport {
 		for(let svg of document.querySelectorAll('svg')){
 			svg.remove();
 		}
-		if(
-			this.data.length > 0 &&
-			!isNaN(this.data[0].Vc) &&
-			!isNaN(this.data[0].Ppl) &&
-			!isNaN(this.data[0].PEP)
-		){this.cGraph();}
+		let plotable = this.data.filter(d=>{
+			return !isNaN(d.Vc) && !isNaN(d.Ppl) && !isNaN(d.PEP);
+		});
+		if(plotable.length > 0){this.cGraph();}
 	}
 
 	createGraph(column){
@@ -158,19 +156,11 @@ class preport {
 
 		this.graph.setscale(this.data[0].points, fx, fy);
 
-		for(let dat of this.data){
-			if(
-				!isNaN(dat.Vc) &&
-				!isNaN(dat.Ppl) &&
-				!isNaN(dat.PEP)
-			){
-				this.graph.tracer(dat.points, fx, fy);
-
-				if(dat.recr){
-					this.graph.tracer(dat.recr.points, fx, fy);
-				}
-
-			}
+		let plotable = this.data.filter(d=>{
+			return !isNaN(d.Vc) && !isNaN(d.Ppl) && !isNaN(d.PEP);
+		});
+		for(let dat of plotable){
+			this.graph.tracer(dat.points, fx, fy);
 			this.graph.AutoscaleAll();
 		}
 
