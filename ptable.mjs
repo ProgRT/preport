@@ -34,8 +34,6 @@ export class ptable {
 		this.dict = {
 			fr: fr,
 		};
-
-		console.log(this.translate('mbar'));
 	}
 
 	init() { 
