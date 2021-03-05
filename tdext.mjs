@@ -2,14 +2,14 @@
 // Class
 // ---------------
 
-class tdEd extends HTMLTableCellElement {
+export class tdEd extends HTMLTableCellElement {
 	constructor() {
 		super();
 		this.contentEditable=true;
 	}
 }
 
-class tdEdNum extends tdEd {
+export class tdEdNum extends tdEd {
 	constructor() {
 		super();
 		this.className = "number";

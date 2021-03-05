@@ -1,5 +1,5 @@
-@import "table.css";
-@import "gs.css";
+@import "../css/table.css";
+@import "../css/gs.css";
 
 html {
 	min-height: 100%;

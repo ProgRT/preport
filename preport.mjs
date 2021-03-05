@@ -1,3 +1,5 @@
+import {ptable} from './ptable.mjs';
+import {graph} from './graphsimple.mjs';
 const prdefaults = {
 
 	langue: 'fr-ca',
@@ -25,7 +27,7 @@ const prdefaults = {
 	},
 };
 
-class preport {
+export class preport {
 
 	constructor(param) {
 
@@ -33,10 +35,7 @@ class preport {
 			if(param && param[key]){this[key] = param[key]}
 			else{this[key] = prdefaults[key]}
 		}
-		this.div = document.createElement('div');
-		this.div.id = 'preport';
-
-		document.body.appendChild(this.div);
+		this.div = document.querySelector('#preport');
 
 		this.header = document.createElement('header');
 		this.div.appendChild(this.header);
@@ -59,6 +58,10 @@ class preport {
 			this.updateGraph
 		];
 
+	}
+
+	translate(string) {
+		return dict[string] || string;
 	}
 
 	dateString() {
@@ -118,13 +121,8 @@ class preport {
 	}
 
 	updateCgraph = ()=>{
-		for(let svg of document.querySelectorAll('svg')){
-			svg.remove();
-		}
-		let plotable = this.data.filter(d=>{
-			return !isNaN(d.Vc) && !isNaN(d.Ppl) && !isNaN(d.PEP);
-		});
-		if(plotable.length > 0){this.cGraph();}
+		for(let svg of document.querySelectorAll('svg')){svg.remove()}
+		if(this.plotable.length > 0){this.cGraph();}
 	}
 
 	createGraph(column){
@@ -132,7 +130,7 @@ class preport {
 		data.sort(d=>d.PEP);
 		let fx = d=>d.PEP;
 		let fy = d=>d[column.name];
-		this.graph = new gs.graph(null, this.grconf);
+		this.graph = new graph(null, this.grconf);
 		this.graph.setscale(data, fx, fy);
 		this.graph.tracer(data, fx, fy);
 		this.graph.setidx('PEP (hPa)');
@@ -151,17 +149,23 @@ class preport {
 			.attr('id', 'cGraph')
 			.attr('class', 'cGraph');
 
-		this.graph = new gs.graph('#cGraph', this.grconf);
-		//this.graph = new gs.graph(null, this.grconf);
+		this.graph = new graph('#cGraph', this.grconf);
 
 		this.graph.setscale(this.data[0].points, fx, fy);
 
-		let plotable = this.data.filter(d=>{
-			return !isNaN(d.Vc) && !isNaN(d.Ppl) && !isNaN(d.PEP);
-		});
-		for(let dat of plotable){
+		for(let dat of this.plotable){
 			this.graph.tracer(dat.points, fx, fy);
 			this.graph.AutoscaleAll();
+		}
+
+		for(let d of this.plotable.filter(d=>d.Vrec)){
+			this.graph.ply( {
+				min: d.Vstart - d.Vrec,
+				max: d.Vstart,
+				x: d.PEP,
+				id: d.Vrec + ' ml',
+				labelShift: -3,
+				});
 		}
 
 		this.graph.setidx('Pression (hPa)');
@@ -169,6 +173,14 @@ class preport {
 		this.graph.AutoscaleAll();
 	}
 
+	get plotable(){ 
+		return this.data.filter(d=>isPlotable(d))
+	};
+
 	get data() {return this.table.data}
 	get extraRowFunc() {return this.table.extraRowFunc;}
+}
+
+function isPlotable(d){
+	return !isNaN(d.Vc) && !isNaN(d.Ppl) && !isNaN(d.PEP);
 }

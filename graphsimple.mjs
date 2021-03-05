@@ -24,134 +24,118 @@ gs.defaults = {
 		  nticksX:10
 };
 
-gs.animer = function(graph){
-		  if(graph.curAnim < graph.animations.length){
-					 graph.animations[graph.curAnim]();
-					 graph.curAnim ++;
-		  }
-};
-
-gs.stat = function(iddiv, respd){
-		  var tableau = "<table style='float:top'6>";
-		  tableau += "<tr><td>P<small>A</small>CO₂:</td><td>" + Math.round(10*respd[0].pAco2)/10 +" mmHg</td></tr>";
-		  tableau += "<tr><td>P<small>E</small>CO₂:</td><td>" + Math.round(10*respd[0].pmeco2)/10 +" mmHg</td></tr>";
-		  tableau += '<tr><td>$\\frac{V_{EM}}{Vc}$ (Fowler):</td><td>' + Math.round(1000* respd[0].fowler)/10 +" %</td></tr>";
-		  tableau += '<tr><td>$\\frac{V_{EM}}{Vc}$ (Bohr):</td><td>' + Math.round(1000* respd[0].bohr)/10 +" %</td></tr>";
-		  tableau += "</table>";
-		  $(iddiv).append(tableau);
-};
-
-gs.graph = class {
+export class graph {
 		  constructor(idsvg, conf){
 
 
-					 for(var index in gs.defaults){
-								this[index] = gs.defaults[index];
-					 }
+				for(var index in gs.defaults){
+					this[index] = gs.defaults[index];
+				}
 
-					 for(var index in conf){
-								this[index] = conf[index];
-					 }
+				for(var index in conf){
+					this[index] = conf[index];
+				}
 
-					 if(idsvg == null){
-								this.idsvg = "#" + gs.newSvg();
-					 }
-					 else{
-								this.idsvg = idsvg;
-					 }
-					 this.svg = d3.select(this.idsvg)
-								.classed("gs", true);
+				if(idsvg == null){
+					this.idsvg = "#" + gs.newSvg();
+				}
+				else{
+					this.idsvg = idsvg;
+				}
+				this.svg = d3.select(this.idsvg)
+					.classed("gs", true);
 
-					 if('class' in this){
-								this.svg.classed(this.class, true);
-					 }
-					 if('viewBox' in this){
-								this.svg.attr('viewBox', this.viewBox);
-					 }
-					 this.gridGroup = this.svg.append("g")
-								.attr("id", "gridGroup");
+				if('class' in this){
+					this.svg.classed(this.class, true);
+				}
+				if('viewBox' in this){
+					this.svg.attr('viewBox', this.viewBox);
+				}
+				this.gridGroup = this.svg.append("g")
+					.attr("id", "gridGroup");
 
-					 this.plageGroup = this.svg.append("g")
-								.attr("id", "plageGroup");
+				this.plageGroup = this.svg.append("g")
+					.attr("id", "plageGroup");
 
-					 this.waveformGroup = this.svg.append("g")
-								.attr("id", "waveformGroup");
+				this.waveformGroup = this.svg.append("g")
+					.attr("id", "waveformGroup");
 
-					 this.annotationsGroup = this.svg.append("g")
-								.attr("id", "annotationsGroup");
+				this.annotationsGroup = this.svg.append("g")
+					.attr("id", "annotationsGroup");
 
-					 this.controlsGroup = this.svg.append("g")
-								.attr("class", "controlsGroup");
+				this.controlsGroup = this.svg.append("g")
+					.attr("class", "controlsGroup");
 
-					 this.donnees = [];
-					 this.courbes = [];
-					 this.vecteurs = [];
-					 this.etiquettes = [];
-					 this.plagesx = [];
-					 this.pointsx = [];
-					 this.pointsy = [];
+				this.donnees = [];
+				this.courbes = [];
+				this.vecteurs = [];
+				this.etiquettes = [];
+				this.plagesx = [];
+				this.plagesy = [];
+				this.pointsx = [];
+				this.pointsy = [];
 
-					 this.anotations = [];
-					 this.animations = [];
-					 this.curAnim = 0;
+				this.anotations = [];
+				this.animations = [];
+				this.curAnim = 0;
 
 
-					 this.defs = this.svg.append("defs");
+				this.defs = this.svg.append("defs");
 
-					 this.defs.append("marker")
-								.attr("id", "flechep")
-								.attr("refY", "7")
-								.attr("refX", "7")
-								.attr("markerWidth", "21")
-								.attr("markerHeight", "14")
-								.attr("orient", "auto")
-								.attr("markerUnits", "userSpaceOnUse")
-								.append("path")
-								.attr("d", "M5,3 L9,7 L5,11");
+				this.defs.append("marker")
+					.attr("id", "flechep")
+					.attr("refY", "7")
+					.attr("refX", "7")
+					.attr("markerWidth", "21")
+					.attr("markerHeight", "14")
+					.attr("orient", "auto")
+					.attr("markerUnits", "userSpaceOnUse")
+					.append("path")
+					.attr("d", "M5,3 L9,7 L5,11");
 
-					 this.defs.append("marker")
-								.attr("id", "fleches")
-								.attr("refY", "7")
-								.attr("refX", "14")
-								.attr("markerWidth", "21")
-								.attr("markerHeight", "14")
-								.attr("orient", "auto")
-								.attr("markerUnits", "userSpaceOnUse")
-								.append("path")
-								.attr("d", "M16,3 L12,7 L16,11");
+				this.defs.append("marker")
+					.attr("id", "fleches")
+					.attr("refY", "7")
+					.attr("refX", "14")
+					.attr("markerWidth", "21")
+					.attr("markerHeight", "14")
+					.attr("orient", "auto")
+					.attr("markerUnits", "userSpaceOnUse")
+					.append("path")
+					.attr("d", "M16,3 L12,7 L16,11");
 
-					 this.defs.append("marker")
-								.attr("id", "flecheg")
-								.attr("refY", "10")
-								.attr("refX", "3")
-								.attr("markerWidth", "21")
-								.attr("markerHeight", "18")
-								.attr("orient", "auto")
-								.attr("markerUnits", "userSpaceOnUse")
-								.append("path")
-								.attr("d", "M9,5 L3,10 L9,15");
+				this.defs.append("marker")
+					.attr("id", "flecheg")
+					.attr("refY", "10")
+					.attr("refX", "3")
+					.attr("markerWidth", "21")
+					.attr("markerHeight", "18")
+					.attr("orient", "auto")
+					.attr("markerUnits", "userSpaceOnUse")
+					.append("path")
+					.attr("d", "M9,5 L3,10 L9,15");
 
-					 this.defs.append("marker")
-								.attr("id", "flechev")
-								.attr("refY", "10")
-								.attr("refX", "9")
-								.attr("markerWidth", "21")
-								.attr("markerHeight", "18")
-								.attr("orient", "auto")
-								.attr("markerUdivnits", "userSpaceOnUse")
-								.attr('stroke', 'context-stroke')
-								.append("path")
-								.attr("d", "M3,5 L9,10 L3,15");
+				this.defs.append("marker")
+					.attr("id", "flechev")
+					.attr("refY", "10")
+					.attr("refX", "9")
+					.attr("markerWidth", "21")
+					.attr("markerHeight", "18")
+					.attr("orient", "auto")
+					.attr("markerUdivnits", "userSpaceOnUse")
+					.attr('stroke', 'context-stroke')
+					.append("path")
+					.attr("d", "M3,5 L9,10 L3,15");
 
-					 if (this.drawControlsSymbols == true){
-								this.controlsGroup.append("text")
-										  .attr("x", this.width - this.margeD - 80)
-										  .attr("y", this.margeH + 80)
-										  .attr("text-anchor", "middle")
-										  .text('T')
-										  .on('click', function(){alert('Allo !')});
-					 }
-					 addEventListener('resize', ()=>this.redessiner());
+				if (this.drawControlsSymbols == true){
+					this.controlsGroup.append("text")
+						.attr("x", this.width - this.margeD - 80)
+						.attr("y", this.margeH + 80)
+						.attr("text-anchor", "middle")
+						.text('T')
+						.on('click', function(){alert('Allo !')});
+				}
+				addEventListener('resize', ()=>this.redessiner());
 		  }
 
 		  setRanges () {
@@ -480,6 +464,33 @@ gs.graph = class {
 					 return this;
 		  }
 
+			ply(c) {
+				this.plagesy.push(c);
+				this.plageyDraw(this.plagesy[this.plagesy.length -1]);
+			}
+
+		  plageyDraw(p) {
+
+					 if(p.ligne){p.ligne.remove()}
+					 if(p.texteDisplay){p.texteDisplay.remove()}
+
+					 p.ligne = this.plageGroup.append("line")
+								.attr("y1", this.echelley(p.min) - this.padPlage)
+								.attr("y2", this.echelley(p.max) + this.padPlage)
+								.attr("x1", this.echellex(p.x))
+								.attr("x2", this.echellex(p.x))
+								.attr("class", "help")
+								.attr("style", "marker-start: url(#flecheg);marker-end: url(#flechev);");
+
+					 p.texteDisplay = this.svg.append("text")
+								.attr("class", "help")
+								.attr("y", this.echelley(p.min + (p.max - p.min)/2))
+								.attr("x", this.echellex(p.x + p.labelShift))
+								.attr("text-anchor", "middle")
+								.text(p.id)
+					 ;
+		  }
+
 		  plagexDraw(p) {
 
 					 if(p.ligne){p.ligne.remove()}
@@ -517,60 +528,6 @@ gs.graph = class {
 
 					 this.plagesx.push(plage);
 
-					 return this;
-
-		  }
-
-		  plagey (min, max, id){
-					 var pad = this.padPlage;
-					 var plage = {};
-
-					 plage.ligneHaut = this.plageGroup.append("line")
-								.attr("y1", this.echelley(min + (max-min)/2) - pad)
-								.attr("y2", this.echelley(min + (max-min)/2) - pad)
-								.attr("class", "help")
-								.attr("style", "marker-end: url(#flechep);");
-
-					 plage.ligneBas = this.plageGroup.append("line")
-								.attr("y2", this.echelley(min + (max-min)/2) + pad)
-								.attr("y1", this.echelley(min + (max-min)/2) + pad)
-								.attr("class", "help")
-								.attr("style", "marker-end: url(#flechep);");
-
-					 if(this.annotateOnRight == true){
-								plage.ligneHaut
-										  .attr("x1", this.width - this.margeD/2)
-										  .attr("x2", this.width - this.margeD/2);
-								plage.ligneBas
-										  .attr("x1", this.width - this.margeD/2)
-										  .attr("x2", this.width - this.margeD/2);
-					 }
-
-					 plage.ligneHaut.transition()
-								.duration(this.durAnim)
-								.attr("y2", this.echelley(max) + pad);
-
-					 plage.ligneBas.transition()
-								.duration(this.durAnim)
-								.attr("y2", this.echelley(min) - pad)
-
-					 plage.rect = this.plageGroup.append("rect")
-								.attr('x', this.margeG)
-								.attr('y', this.echelley(max))
-								.attr('width', this.width - this.margeD - this.margeG)
-								.attr('height', this.echelley(min) - this.echelley(max));
-
-					 plage.texte = this.svg.append("text")
-								.attr("class", "help")
-								.attr("y", this.echelley(min + (max - min)/2))
-								.attr("x", this.width - this.margeD/2)
-								.attr("text-anchor", "middle")
-								.text(id)
-								.attr("opacity", 0);
-
-					 plage.texte.transition().duration(this.durAnim).attr("opacity",1);
-
-					 this.plages.push(plage);
 					 return this;
 
 		  }
@@ -772,48 +729,4 @@ gs.graph = class {
 		  }
 
 		  //	return this;
-}
-
-gs.quickGraph = function(div, data, fx, fy, conf){
-		  return new gs.raph(div, conf)
-					 .setscale(data, fx, fy)
-					 .tracer(data, fx, fy);
-}
-
-gs.addGraph = function(target, data, fx, fy, conf){
-		  var numSVG = document.getElementsByTagName("svg").length + 1; 
-		  var newSVGid = target + "SVG" + numSVG;
-		  var newsvg = d3.select("#" + target)
-					 .append("svg")
-					 .attr("id", newSVGid)
-		  ;
-		  if (typeof conf != "undefined" && 'class' in conf){
-					 newsvg.classed(conf.class, true);
-		  }
-		  return gs.quickGraph("#" + newSVGid, data, fx, fy, conf);
-}
-
-gs.newSvg = function(){
-		  var scriptParent = document.scripts[document.scripts.length - 1].parentNode;
-		  var numSVG = document.getElementsByTagName("svg").length + 1; 
-		  var newSVGid = "svg" + numSVG;
-		  var newsvg = d3.select(scriptParent)
-					 .append("svg")
-					 .attr("id", newSVGid);
-		  return newSVGid;
-}
-
-gs.newDiv = function(){
-		  var scriptParent = document.scripts[document.scripts.length - 1].parentNode;
-		  var divNum = document.querySelectorAll("div").length + 1;
-		  var newDiv = document.createElement("div");
-		  newDiv.id = "div" + divNum;
-		  scriptParent.appendChild(newDiv);
-		  return newDiv.id;
-}
-
-gs.randomHue = function(saturation, lightnes){
-		  var hue = Math.random() * 360;
-		  var color = "hsl( " + hue + ", " + saturation + "%, " + lightnes + "% )";
-		  return color;
 }

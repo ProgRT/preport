@@ -1,6 +1,9 @@
-class ptable {
+import {tdEd, tdEdNum} from './tdext.mjs';
+import {fr} from './dict.mjs';
 
-	constructor(target) {
+export class ptable {
+
+	constructor(target, conf) {
 		this.target = document.querySelector(target);
 		this.table = document.createElement("table");
 		this.thead = document.createElement("thead");
@@ -21,19 +24,34 @@ class ptable {
 			{name: "Commentaire", type: "text"},
 		];
 
+		if(conf && conf.lang){
+			this.lang = conf.lang;
+		}
+
 		this.extraRowFunc = [ ];
+
+		this.lang = 'fr';
+		this.dict = {
+			fr: fr,
+		};
+
+		console.log(this.translate('mbar'));
 	}
 
 	init() { 
 		let row = document.createElement("tr");
 		for(let column of this.columns){
 			let th = document.createElement("th");
-			th.textContent = column.name;
+			th.innerHTML = this.translate(column.name);
 			th.className = column.type;
 			row.appendChild(th);
 		}
 		this.thead.appendChild(row);
 		this.target.appendChild(this.table);
+	}
+
+	translate(str){
+		return this.dict[this.lang][str]||str;
 	}
 
 	addRow() { 

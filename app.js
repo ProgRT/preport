@@ -1,3 +1,4 @@
+import {preport} from './preport.mjs';
 const settings = {
 	langue: 'fr-ca',
 	conditions: [
@@ -10,6 +11,7 @@ const settings = {
 		{name: 'Vdiff', type: 'result', unit: 'ml', formule: d=>d.Vcder - d.Vc},
 		{name: "Pmotrice", type: "result", formule: d => d.Ppl - d.PEP, unit: 'cmH2O', graph: true},
 		{name: "Cst", type: "result", unit: 'ml/hPa', formule: d=>Math.round(10*d.Vc/d.Pmotrice)/10},
+		{name: 'Vrec', type: 'result'},
 		{name: 'RI', type: 'result'},
 		{name: "SpO2", type: "number", unit: '%'},
 		{name: "EtCO2", type: "number", unit: 'mmHg'},
@@ -71,7 +73,7 @@ report.table.extraRowFunc = [
 		if(i > 0){
 			d.recr = {};
 			d.deltaPEP = d.PEP - t[i-1].PEP;
-			d.Vrec = d.Vstart - (t[i-1].Vstart + (d.deltaPEP * t[i-1].Cst));
+			d.Vrec = Math.round(d.Vstart - (t[i-1].Vstart + (d.deltaPEP * t[i-1].Cst)));
 			d.Crecr = d.Vrec / d.deltaPEP;
 			d.RI = Math.round(100 * d.Crecr / t[i-1].Cst)/100;
 		};
