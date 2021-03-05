@@ -77,6 +77,12 @@ footer p {
 	margin-top: 4pt;
 	margin-bottom: 4pt;
 }
+
+.cclogo {
+	height: 22px!important;
+	margin-left: 3px;
+	vertical-align: text-bottom;
+}
 /***** Graphics *********/
 .cGraph {
 	height: 400px;
