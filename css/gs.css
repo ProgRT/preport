@@ -13,7 +13,9 @@ g#annotationsGroup line, g#plageGroup line {
 
 .gs {
   width: 100%;
-  height: 250px; }
+  height: 100%; 
+}
+
   .gs path.surface {
     stroke: none;
     fill: none; }

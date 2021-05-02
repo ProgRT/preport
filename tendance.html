@@ -5,26 +5,21 @@
 <meta name=viewport content='width=device-width, user-scalable=no' />
 
 <head>
-
 	<link rel=stylesheet href=css/preport.css />
-	<link rel=stylesheet media=print href=css/print.css />
 	<link rel="icon" type="image/png" href="img/logo.svg.png" />
 
 	<script src="./lib/d3.v3.min.js"></script>
-	<script type=module src='app.js'> </script>
-
+	<script type=module src='app-tendance.js'> </script>
 </head>
 
 <body>
 
 	<header>
-		<img src='img/logo2.svg' class='logo'/>
+		<img src='img/logo.svg' class='logo'/>
 		<h1>Étude de vecrutement alvéolaire <em>vs</em> PEP</h1>
 	</header>
 
 	<div id='preport'></div>
 
-		{% include footer.html %}
-		{% include apropos.html %}
-		{% include aide.html %}
+	{% include footer.html %}
 </body>
