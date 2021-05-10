@@ -41,6 +41,9 @@ body {
 	justify-content: center;
 }
 
+#preportCgraphDiv {
+	width: 100%;
+}
 #preportTrDiv {
 	display: flex;
 	max-width: 50%;
