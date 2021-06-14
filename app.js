@@ -11,7 +11,7 @@ const settings = {
 		{name: 'Vcder', type: 'number', unit: 'ml'},
 		{name: 'Vdiff', type: 'result', unit: 'ml', formule: d=>d.Vcder - d.Vc},
 		{name: "Pmotrice", type: "result", formule: d => d.Ppl - d.PEP, unit: 'cmH2O'},
-		{name: "Cst", type: "result", unit: 'ml/hPa', graph: false, formule: d=>Math.round(10*d.Vc/d.Pmotrice)/10},
+		{name: "Cst", type: "result", unit: 'ml/hPa', graph: false, formule: d=>d.Vc/d.Pmotrice},
 		{name: 'Vrec', type: 'result'},
 		{name: 'RI', type: 'result'},
 		{name: "SpO2", type: "number", unit: '%', graph: false},

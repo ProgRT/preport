@@ -7,8 +7,8 @@ table {
 tr {
 	height: 8mm;
 }
-tbody tr:not(:last-child) {
-	border-bottom: 0.5px solid hsl(0, 0%, 70%);
+tbody tr:not(:first-child) {
+	border-top: 0.5px solid hsl(0, 0%, 70%);
 }
 
 td, th{
