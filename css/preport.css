@@ -17,7 +17,7 @@ body {
 	background-color: white;
 	box-shadow: 0px 3px 20px 2px silver;
 	font-size: 10pt;
-	min-height: calc(100% - 40px);
+	min-height: 9in;/* Required for printing*/
 	max-width: 8.5in;
 	display: grid;
 	grid-template-rows: auto 2fr auto;
