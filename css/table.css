@@ -11,6 +11,12 @@ tbody tr:not(:first-child) {
 	border-top: 0.5px solid hsl(0, 0%, 70%);
 }
 
+td[contenteditable=true]{
+	color: midnightblue;
+	font-family: cursive;
+	font-size: 150%;
+	font-weight: bold;
+}
 td, th{
 	padding-left: 6px;
 	padding-right: 6px;

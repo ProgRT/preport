@@ -3,11 +3,14 @@ import {zeroStartVolume, calcVstart, calcPoints, calcRecr} from './lib/functions
 
 const settings = {
 	langue: 'fr-ca',
-	conditions: [],
+	conditions: [
+		{name: "Vc", unit: 'ml'},
+		{name: 'FiO2', unit: '%'},
+	],
 	tableColumns: [
 		{name: "PEP", type: "number", unit: 'hPa'},
 		{name: "Ppl", type: "number", unit: 'hPa'},
-		{name: 'Vc', type: 'number', unit: 'ml'},
+		//{name: 'Vc', type: 'number', unit: 'ml'},
 		{name: 'Vcder', type: 'number', unit: 'ml'},
 		{name: 'Vdiff', type: 'result', unit: 'ml', formule: d=>d.Vcder - d.Vc},
 		{name: "Pmotrice", type: "result", formule: d => d.Ppl - d.PEP, unit: 'cmH2O'},
